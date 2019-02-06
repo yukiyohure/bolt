@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-p{
+/*メインのfontはbodyにつける*/
+body{
 	font-family: 'Lato',sans-selifs;
 }
 
@@ -22,13 +23,13 @@ main{
 /*header*/
 .header{
 	background-color: #fff;
+	padding: 15px 0;
 	position: fixed;
 	width: 100%;
 	z-index: 2;
 }
 
 .header-inner{
-	padding: 15px 0;
 	width: 1100px;
 	margin:0 auto;
 }
@@ -69,11 +70,7 @@ main{
 	width: 1100px;
 	text-align: center;
 	display: inline-block;
-}
-
-.boltTheme-items{
 	padding: 250px 0;
-  display: inline-block;
 }
 
 .boltTheme-title{
@@ -99,11 +96,7 @@ main{
 	margin:0 auto;/*めっちゃ大事*/
 	display: flex;
 	justify-content: center;
-	align-items: center;
-}
-
-.iphone{
-	margin-top: 50px;
+	padding-top:50px;
 }
 
 .iphone-pic{
@@ -112,8 +105,9 @@ main{
 
 .textBox{
 	color: #fff;
-	padding:80px;
+	margin-left:100px;
 	text-align: center;
+	width: 680px;
 }
 
 .articleTitle{
@@ -124,6 +118,7 @@ main{
 
 .articleText{
 	font-size:20px;
+	line-height: 30px;
 }
 
 /*article
@@ -136,13 +131,14 @@ main{
 .work-box{
 	width:1100px;
 	margin:0 auto;
+	padding:60px 0 70px 0;
 }
 
 .work-box-title{
 	color: #333;
 	font-family: 'Raleway',sans-selifs;
 	font-size: 24px;
-	padding:60px 0 40px 0;
+	margin-bottom:40px;
 	text-align: center;
 }
 
@@ -172,13 +168,15 @@ main{
 .workBox-conteiner-explain{
 	margin:0 auto;
 	text-align: center;
+	margin-top:90px;
 }
 
 .explain{
 	color:#333;
 	display: inline-block;
 	text-align: center;
-	margin:90px 90px 70px 0;
+	margin-right:90px;
+	width: 460px;
 }
 
 .email-button{
@@ -188,7 +186,6 @@ main{
 	font-size: 12px;
 	padding: 14px 20px;
 	vertical-align: top;
-	margin:90px 0 70px 0;
 	transition: all ease 0.3s;
 }
 
@@ -212,7 +209,7 @@ main{
 
 .skills-box-title{
 	color: #fff;
-	padding-bottom:50px;
+	margin-bottom:50px;
 	text-align: center;
 }
 
@@ -242,6 +239,8 @@ main{
 .nav-box{
 	width: 1100px;
 	margin:0 auto;
+	padding:200px 0;
+	text-align: center;
 }
 
 .share{
@@ -249,26 +248,17 @@ main{
 	font-size:50px;
 }
 
-.nav-box{
-	padding:200px 0;
-	text-align: center;
-}
-
-.nav-box p{
-	display: inline-block;
+.nav-box a{
 	width: 185px;
-	height: 100px;
+	padding: 20px 0;
 	transition: all ease 0.3s;
 }
 
-.nav-box p:hover{
+.nav-box a:hover{
 	background-color: #fff;
 }
-
-.share{
- padding-top:25px;
-}
 /*nav*/
+
 /*footer*/
 .footer{
 	background-color: #74cfae;
@@ -277,12 +267,12 @@ main{
 .copy{
 	width: 1100px;
 	margin:0 auto;
+	padding:20px 0 25px 0;
 }
 
 .copy-text{
-	padding:20px 0 25px 0;
 	color:#fff;
-	float: right;
+	text-align: right;
 }
 
 

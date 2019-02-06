@@ -1,3 +1,23 @@
+<!-- 
+
+  fontawesomeは外部リンクを消してfaだけにすればいい。
+  what we can do のところは親要素に対してpadding。
+  textbocの余白は無くして、iphoneに対してmarginright。
+  h3じゃなくてh2
+  brいらない.幅で制御する。
+
+  workやwork-boxでpaddingをとったほうがいい。
+
+  our latest work の下はmargin
+  explainよりworkBox-conteiner-explainで余白をとったほうがいい。
+  ourskillsの下の余白もmargin.
+  ホバーはaタグに。
+
+  snsのマークはheightじゃなくて上下のpaddingとかで。pを広げるのではなくaを広げる。
+
+  余白は統一して同じ階層についてクラスでとったほうがいい。
+ -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,29 +26,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="discription" contant="This is my portfolio site.">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="bolt, bootstrap, portfolio">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header">
       <div class="header-inner clearfix">
-        <p class="boltMark"><i class="fas fa-bolt"></i></p>
+        <p class="boltMark"><i class="fa fa-bolt"></i></p>
         <a href="#" class="contactButton">contact</a>
       </div>
     </header>
     <main>
       <div class="boltTheme">
         <div class="boltTheme-box">
-          <section class="boltTheme-items">
-            <h1 class="boltTheme-title">Bolt Theme</h1>
-            <p class="boltTheme-text">FREE BOOTSTRAP THEMES</p>
-          </section>
+          <h1 class="boltTheme-title">Bolt Theme</h1>
+          <p class="boltTheme-text">FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
       <article class="article">
@@ -37,31 +53,31 @@
             <img class="iphone-pic" src="./img/iphone.png">
           </div>
           <div class="textBox">
-            <p class="articleTitle">WHAT WE CAN DO?</p>
-            <p class="articleText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the<br> 1500s, when an unknown printer took a galley of type and scrambled it to<br> make a type specimen book.</p>
+            <h2 class="articleTitle">WHAT WE CAN DO?</h2>
+            <p class="articleText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
       </article>
       <section class="work">
         <div class="work-box">
-          <h3 class="work-box-title">OUR LATEST WORK</h3>
-            <div class="pics">
-              <a class="pics-pic" href="#"><img src="./img/01.jpg"></a>
-              <a class="pics-pic" href="#"><img src="./img/02.jpg"></a>
-              <a class="pics-pic" href="#"><img src="./img/03.jpg"></a>
-              <a class="pics-pic" href="#"><img src="./img/04.jpg"></a>
-              <a class="pics-pic" href="#"><img src="./img/05.jpg"></a>
-              <a class="pics-pic" href="#"><img src="./img/06.jpg"></a>
-            </div>
+          <h2 class="work-box-title">OUR LATEST WORK</h2>
+          <div class="pics">
+            <a class="pics-pic" href="#"><img src="./img/01.jpg"></a>
+            <a class="pics-pic" href="#"><img src="./img/02.jpg"></a>
+            <a class="pics-pic" href="#"><img src="./img/03.jpg"></a>
+            <a class="pics-pic" href="#"><img src="./img/04.jpg"></a>
+            <a class="pics-pic" href="#"><img src="./img/05.jpg"></a>
+            <a class="pics-pic" href="#"><img src="./img/06.jpg"></a>
+          </div>
           <div class="workBox-conteiner-explain">
-            <p class="explain">Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been the industry's standard dummy<br> text ever.</p>
+            <p class="explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
             <a href="#" class="email-button">Email Me!</a>
           </div>
         </div>
       </section>
       <section class="skills">
         <div class="skills-box">
-          <h3 class="skills-box-title">OUR SKILLS</h3>
+          <h2 class="skills-box-title">OUR SKILLS</h2>
           <div class="skills-box-pics">
             <div class="each-skills">
               <img src="./img/circle_01.png">
@@ -84,16 +100,16 @@
       </section>
       <nav class="nav">
         <div class="nav-box">
-            <p><a href="#" class="share fab fa-facebook-f"></a></p>
-            <p><a href="#" class="share fab fa-dribbble"></a></p>
-            <p><a href="#" class="share fab fa-twitter"></a></p>
-            <p><a href="#" class="share fas fa-envelope"></a></p>
+          <a href="#" class="share fa fa-facebook"></a>
+          <a href="#" class="share fa fa-dribbble"></a>
+          <a href="#" class="share fa fa-twitter"></a>
+          <a href="#" class="share fa fa-envelope"></a>
         </div>
       </nav>
     </main>
     <footer class="footer">
-      <div class="copy clearfix">
-        <p class="copy-text">Crafted with <i class="heart fas fa-heart"></i> by BlackTie.com</p>
+      <div class="copy">
+        <p class="copy-text">Crafted with <i class="heart fa fa-heart"></i> by BlackTie.com</p>
       </div>
     </footer>
     <script src="js/script.js"></script>
