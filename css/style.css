@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /*メインのfontはbodyにつける*/
 body{
 	font-family: 'Lato',sans-selifs;
@@ -26,7 +27,7 @@ main{
 	padding: 15px 0;
 	position: fixed;
 	width: 100%;
-	z-index: 2;
+	z-index: 1;
 }
 
 .header-inner{
@@ -41,6 +42,10 @@ main{
 	float: left;
 	margin-left: 100px;
 	padding: 2px 0;
+}
+
+.hamburger-icon{
+	display: none;
 }
 
 .contactButton{
@@ -237,6 +242,7 @@ main{
 }
 
 .nav-box{
+	font-size:0;
 	width: 1100px;
 	margin:0 auto;
 	padding:200px 0;
@@ -246,9 +252,6 @@ main{
 .share{
 	color: #74cfae;
 	font-size:50px;
-}
-
-.nav-box a{
 	width: 185px;
 	padding: 20px 0;
 	transition: all ease 0.3s;
@@ -278,6 +281,217 @@ main{
 
 /*footer*/
 
+
+@media screen and (max-width:767px){
+  /*スマホ。画面幅が767pxまでの時*/
+
+  .hamburger{
+  	position:relative;
+    float: right;
+  }
+
+  .hamburger-icon{
+  	display: inline-block;
+  	width: 30px;
+	  height: 22px;
+	  vertical-align: middle;
+	  border:1px solid #ddd;
+	  border-radius: 4px;
+	  padding:10px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon span, .hamburger-icon span:before, .hamburger-icon span:after{
+	  position: absolute;
+	  height: 2px;/*線の太さ*/
+	  width: 27px;/*長さ*/
+	  background-color: #ddd;
+	  display: block;
+	  content: '';
+  }
+
+  .hamburger-icon span:before {
+  bottom: -9px;
+	}
+
+	.hamburger-icon span:after {
+	  bottom: -18px;
+	}
+
+  .header-inner{
+  	width: 97%;
+  }
+
+  .boltMark{
+  	margin-left:10px;
+  }
+
+  .contactButton{
+  	display: none;
+  }
+
+  .boltTheme-box{
+  	width: 97%;
+  	padding:160px 0 130px 0;
+  }
+
+  .boltTheme-title{
+  	font-size:80px;
+  	margin-bottom:20px;
+  }
+
+  .article-box{
+  	display: block;
+  	text-align: center;
+  	width: 97%;
+  }
+
+  .textBox{
+  	margin-left:0;
+  	width: 97%;
+  }
+
+  .work-box{
+  	width:97%;
+  	text-align: center;
+  }
+
+  .pics{
+  	margin:0 auto;
+  }
+
+  .pics-pic{
+  	margin:0;
+    display: block;
+  }
+
+  .pics-pic:nth-child(3){
+  	margin-bottom:80px;
+  }
+
+  .explain{
+  	display: block;
+  	margin:0 auto;
+  	width: 300px;
+  }
+
+  .email-button{
+  	margin-top:20px;
+  }
+
+  .skills-box{
+  	width: 97%;
+  }
+
+  .each-skills{
+  	display:block;
+  	width: 100%;
+  	margin:0 0 50px 0;
+  }
+
+  .nav-box{
+  	width: 97%;
+  	padding: 50px 15px;
+  	box-sizing: border-box;
+  }
+
+  .share{
+  	display: block;
+  	width: 100%;
+  }
+
+  .copy{
+  	width: 97%;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+  /*タブレット。画面幅が781px以上1199px以下の時*/
+  .header-inner{
+  	width: 97%;
+  }
+
+  .boltTheme-box{
+  	width: 97%;
+  }
+
+  .article-box{
+  	display: block;
+  	padding: 50px 0 25px 0;
+  	text-align: center;
+  	width: 97%;
+  }
+
+  .articleTitle{
+  	margin: 25px 0 35px 0;
+  }
+
+  .textBox{
+  	margin:0 auto;
+  }
+
+  .work-box{
+  	width:97%;
+  }
+
+  .pics{
+  	text-align: center;
+  }
+
+  .pics-pic{
+  	display: block;
+  	margin:0;
+  }
+
+  .pics-pic:nth-child(3){
+  	margin-bottom:80px;
+  }
+
+  .explain{
+  	display: block;
+  	margin:0 auto;
+  	width: 300px;
+  }
+
+  .email-button{
+  	margin-top:20px;
+  }
+
+  .workBox-conteiner-explai{
+  	margin-top:80px;
+  }
+
+  .explain{
+  	width:100%;
+  }
+
+  .email-button{
+  	margin-top:40px;
+  }
+
+  .skills-box{
+  	width: 97%;
+  	padding-bottom:100px;
+  }
+
+  .each-skills{
+  	display:block;
+  	width: 100%;
+    /*margin-left:100pxがかかっているのでmarginleft打ち消しつつbottomつける*/
+  	margin:0 0 88px 0;
+  }
+
+  .each-skills:last-child{
+    margin-bottom:0;
+  }
+
+  .nav-box{
+  	width: 97%;
+  }
+
+  .copy{
+  	width:97%;
+  }
+}
 
 
 
